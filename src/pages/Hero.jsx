@@ -33,7 +33,7 @@ const HeroSection = () => {
 
       // Move text upward with scroll (no scale, no pin)
       gsap.to(textRef.current, {
-        y: "-100vh",
+        y: "-80vh",
         ease: "power2.out",
         scrollTrigger: {
           trigger: containerRef.current,
@@ -51,7 +51,7 @@ const HeroSection = () => {
     <>
       <div
         ref={containerRef}
-        className="relative h-screen overflow-hidden bg-white"
+        className="relative h-screen overflow-hidden bg-white mt-20"
       >
         {/* Hero Video */}
         <video
@@ -67,7 +67,7 @@ const HeroSection = () => {
         {/* Hero Text */}
         <div
           ref={textRef}
-          className="absolute top-[10%] left-1/2 -translate-x-1/2 text-center text-black z-10"
+          className="absolute top-[2%] left-1/2 -translate-x-1/2 text-center text-black z-10"
         >
           <h1 className="text-8xl sm:text-8xl font-semibold leading-none">
             SWING WITH
