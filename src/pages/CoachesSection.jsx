@@ -4,6 +4,8 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import image1 from "../../public/image1.jpg"; // Adjust path as needed
 import image2 from "../../public/image2.jpg"; // Adjust path as needed
+import image3 from "../../public/image1.jpg"; // Adjust path as needed
+import image4 from "../../public/image2.jpg"; // Adjust path as needed
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -11,10 +13,12 @@ const CoachesSection = () => {
   const sectionRef = useRef(null);
   const image1Ref = useRef(null);
   const image2Ref = useRef(null);
+  const image3Ref = useRef(null);
+  const image4Ref = useRef(null);
 
   useLayoutEffect(() => {
     const ctx = gsap.context(() => {
-      [image1Ref.current, image2Ref.current].forEach((img) => {
+      [image1Ref.current, image2Ref.current, image3Ref.current, image4Ref.current].forEach((img) => {
         gsap.fromTo(
           img,
           {
@@ -28,7 +32,7 @@ const CoachesSection = () => {
               trigger: img,
               start: "top 90%",
               end: "top 10%",
-              scrub: true
+              scrub: true,
             },
           }
         );
@@ -55,18 +59,94 @@ const CoachesSection = () => {
 
       {/* Images */}
       <div className="flex justify-between gap-8">
-        <img
-          ref={image1Ref}
-          src={image1}
-          alt="Coach 1"
-          className="rounded-[2rem] object-cover w-120 h-120 transition-all"
-        />
-        <img
-          ref={image2Ref}
-          src={image2}
-          alt="Coach 2"
-          className="rounded-[2rem] object-cover w-120 h-120 transition-all"
-        />
+        <div>
+          <img
+            ref={image1Ref}
+            src={image1}
+            alt="Coach 1"
+            className="rounded-[3rem] object-cover w-120 h-120 transition-all mb-6 custom-shadow"
+          />
+          <p className="mb-4"> Los Angeles, CA</p>
+          <h1 className="mb-4 text-8xl sm:text-5xl font-semibold leading-none">
+            Sarah Thompson
+          </h1>
+          <p className="mb-4 w-120">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit
+            ullam inventore laboriosam, et nisi, aperiam fugit voluptatum vitae
+            repudiandae consequuntur aut? Omnis laborum molestiae quidem. Omnis
+            maxime optio nam dolores.
+          </p>
+          <button className="border border-gray-300 text-black px-6 py-3 rounded-3xl text-lg">
+            LEARN MORE
+          </button>
+        </div>
+        <div>
+          <img
+            ref={image2Ref}
+            src={image2}
+            alt="Coach 2"
+            className="rounded-[3rem] object-cover w-120 h-120 transition-all mb-6 custom-shadow"
+          />
+          <p className="mb-4"> Los Angeles, CA</p>
+          <h1 className="mb-4 text-8xl sm:text-5xl font-semibold leading-none">
+            Sarah Thompson
+          </h1>
+          <p className="mb-4 w-120">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit
+            ullam inventore laboriosam, et nisi, aperiam fugit voluptatum vitae
+            repudiandae consequuntur aut? Omnis laborum molestiae quidem. Omnis
+            maxime optio nam dolores.
+          </p>
+          <button className="border border-gray-300 text-black px-6 py-3 rounded-3xl text-lg">
+            LEARN MORE
+          </button>
+        </div>
+      </div>
+
+      {/* Images */}
+      <div className="flex justify-between gap-8 mt-16">
+        <div>
+          <img
+            ref={image3Ref}
+            src={image3}
+            alt="Coach 1"
+            className="rounded-[3rem] object-cover w-120 h-120 transition-all mb-6 custom-shadow"
+          />
+          <p className="mb-4"> Los Angeles, CA</p>
+          <h1 className="mb-4 text-8xl sm:text-5xl font-semibold leading-none">
+            Sarah Thompson
+          </h1>
+          <p className="mb-4 w-120">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit
+            ullam inventore laboriosam, et nisi, aperiam fugit voluptatum vitae
+            repudiandae consequuntur aut? Omnis laborum molestiae quidem. Omnis
+            maxime optio nam dolores.
+          </p>
+          <button className="border border-gray-300 text-black px-6 py-3 rounded-3xl text-lg">
+            LEARN MORE
+          </button>
+        </div>
+        <div>
+          <img
+            ref={image4Ref}
+            src={image4}
+            alt="Coach 2"
+            className="rounded-[3rem] object-cover w-120 h-120 transition-all mb-6 custom-shadow"
+          />
+          <p className="mb-4"> Los Angeles, CA</p>
+          <h1 className="mb-4 text-8xl sm:text-5xl font-semibold leading-none">
+            Sarah Thompson
+          </h1>
+          <p className="mb-4 w-120">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit
+            ullam inventore laboriosam, et nisi, aperiam fugit voluptatum vitae
+            repudiandae consequuntur aut? Omnis laborum molestiae quidem. Omnis
+            maxime optio nam dolores.
+          </p>
+          <button className="border border-gray-300 text-black px-6 py-3 rounded-3xl text-lg">
+            LEARN MORE
+          </button>
+        </div>
       </div>
     </section>
   );

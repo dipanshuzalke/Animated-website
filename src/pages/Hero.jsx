@@ -1,9 +1,7 @@
 import { useLayoutEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import video from "../../public/video.mp4"; 
-import CoachesSection from "./CoachesSection";
-
+import video from "../../public/video.mp4";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -14,7 +12,6 @@ const HeroSection = () => {
 
   useLayoutEffect(() => {
     const ctx = gsap.context(() => {
-
       gsap.to(videoRef.current, {
         width: "100vw",
         height: "100vh",
@@ -30,7 +27,7 @@ const HeroSection = () => {
           start: "top 0%", // trigger when center hits center
           end: "+=50%", // controls animation duration
           scrub: true,
-          pin: true, 
+          pin: true,
         },
       });
 
@@ -70,7 +67,7 @@ const HeroSection = () => {
         {/* Hero Text */}
         <div
           ref={textRef}
-          className="absolute top-[15%] left-1/2 -translate-x-1/2 text-center text-black z-10"
+          className="absolute top-[10%] left-1/2 -translate-x-1/2 text-center text-black z-10"
         >
           <h1 className="text-8xl sm:text-8xl font-semibold leading-none">
             SWING WITH
@@ -81,11 +78,18 @@ const HeroSection = () => {
         </div>
       </div>
       <section className="h-80 bg-black text-white flex justify-around items-center text-3xl">
-        <h1>LET'S EXPERIENCE TENNIS<br /> TOGETHER</h1>
+        <h1>
+          LET'S EXPERIENCE TENNIS
+          <br /> TOGETHER
+        </h1>
         <div className="flex flex-col gap-2">
           <p className="text-lg text-gray-500">Stay up to date</p>
           <div>
-            <input type="text" placeholder="Enter your email" className="px-4 py-2 border border-amber-400 rounded-3xl"/>
+            <input
+              type="text"
+              placeholder="Enter your email"
+              className="px-4 py-2 border border-amber-400 rounded-3xl"
+            />
             <button className="bg-amber-400 text-white px-4 py-2 rounded-3xl ml-2">
               Subscribe
             </button>

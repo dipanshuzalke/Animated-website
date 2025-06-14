@@ -1,27 +1,41 @@
-import './App.css'
-import CoachesSection from './pages/CoachesSection';
-import HeroSection from './pages/Hero'
+import "./App.css";
+import FadeInSection from "./FadeInSection";
+import CoachesSection from "./pages/CoachesSection";
+import ContactSection from "./pages/Contact";
+import FAQSection from "./pages/FAQSection";
+import Footer from "./pages/Footer";
+import HeroSection from "./pages/Hero";
+import Locations from "./pages/Locations";
+import Navbar from "./pages/Navbar";
 
 function App() {
   return (
-    <div className="App">
-      <nav className="top-0 z-50 bg-white shadow-md py-8 px-16 flex justify-around items-center border border-b-gray-200">
-        <div className="flex gap-12 text-lg font-bold">
-          <a href="">Location</a>
-          <a href="">Fitness</a>
-        </div>
-        <h1 className='text-xl font-bold'>My website</h1>
-          <div className="flex gap-12 text-lg font-bold">
-            <a href="">About</a>
-          <a href="">Contact</a>
-          </div>
-      </nav>
+    <>
+      <Navbar />
 
       <HeroSection />
-      <CoachesSection />
-    </div>
+
+      <FadeInSection>
+        <CoachesSection />
+      </FadeInSection>
+
+      <FadeInSection>
+        <Locations />
+      </FadeInSection>
+
+      <FadeInSection>
+        <FAQSection />
+      </FadeInSection>
+
+      <FadeInSection>
+        <ContactSection />
+      </FadeInSection>
+
+      <FadeInSection>
+        <Footer />
+      </FadeInSection>
+    </>
   );
 }
 
-
-export default App
+export default App;
