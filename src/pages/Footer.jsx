@@ -47,8 +47,8 @@ const Footer = () => {
       </div>
 
       {/* Bottom Section */}
-      <div className="border-t mt-12 pt-6 text-sm flex flex-col md:flex-row justify-between items-center gap-4">
-        <div className="flex gap-4 text-gray-500">
+      <div className="border-t mt-12 pt-6 text-sm flex flex-col-reverse  md:flex-row justify-between items-center gap-4">
+        <div className="flex flex-col-reverse  md:flex-row gap-4 text-gray-500">
           <p>© 2024 Elysian Tennis. All rights reserved.</p>
           <div className="flex gap-4">
             <a href="#" className="underline">

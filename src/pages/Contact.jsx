@@ -51,12 +51,12 @@ const ContactSection = () => {
       <div>
   {/* Hero Text */}
   <div
-    className="relative pt-[20vh] top-[25%] left-1/2 -translate-x-1/2 text-center text-black z-10"
+    className="relative pt-[5rem] md:pt-[20vh] top-[25%] left-1/2 -translate-x-1/2 text-center text-black z-10"
   >
-    <h1 className="text-8xl sm:text-8xl font-semibold leading-none">
+    <h1 className="text-5xl md:text-8xl sm:text-8xl font-semibold leading-none">
       SWING WITH
     </h1>
-    <h1 className="text-8xl sm:text-8xl font-semibold leading-none">
+    <h1 className="text-5xl md:text-8xl sm:text-8xl font-semibold leading-none">
       CONFIDENCE
     </h1>
   </div>
@@ -64,7 +64,7 @@ const ContactSection = () => {
   {/* Hero Video Container */}
   <div
     ref={containerRef}
-    className="relative h-screen overflow-hidden bg-white -mt-[16vw]"
+    className="relative h-screen overflow-hidden bg-white -mt-[45vw] md:-mt-[16vw]"
   >
     {/* Video */}
     <video
@@ -79,7 +79,7 @@ const ContactSection = () => {
 
     {/* Button Positioned Just Below the Video */}
     <div className="absolute top-[80%] left-1/2 -translate-x-1/2 z-10">
-      <button className="w-[800px] flex justify-center items-center border border-gray-300 text-black px-6 py-3 rounded-3xl text-lg">
+      <button className="md:w-[800px] flex justify-center items-center border border-gray-300 text-black px-6 py-3 rounded-3xl text-lg">
         LEARN MORE
       </button>
     </div>

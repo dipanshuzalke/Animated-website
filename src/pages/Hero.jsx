@@ -51,7 +51,7 @@ const HeroSection = () => {
     <>
       <div
         ref={containerRef}
-        className="relative h-screen overflow-hidden bg-white mt-20"
+        className="relative h-screen overflow-hidden items-center mt-20"
       >
         {/* Hero Video */}
         <video
@@ -61,18 +61,18 @@ const HeroSection = () => {
           loop
           muted
           playsInline
-          className="absolute w-[800px] h-[500px] top-[55%] left-1/2 -translate-x-1/2 -translate-y-1/2 object-cover rounded-3xl shadow-xl z-0"
+          className="absolute m-4 md:m-0 w-[800px] h-[500px] top-[55%] left-1/2 -translate-x-1/2 -translate-y-1/2 object-cover rounded-3xl z-0"
         />
 
         {/* Hero Text */}
         <div
           ref={textRef}
-          className="absolute top-[2%] left-1/2 -translate-x-1/2 text-center text-black z-10"
+          className="absolute top-[5%] md:top-[2%] left-1/2 -translate-x-1/2 text-center text-black z-10"
         >
-          <h1 className="text-8xl sm:text-8xl font-semibold leading-none">
+          <h1 className="text-5xl md:text-8xl font-semibold leading-none">
             SWING WITH
           </h1>
-          <h1 className="text-8xl sm:text-8xl font-semibold leading-none">
+          <h1 className="text-5xl md:text-8xl font-semibold leading-none">
             CONFIDENCE
           </h1>
         </div>
