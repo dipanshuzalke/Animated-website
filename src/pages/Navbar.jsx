@@ -264,7 +264,7 @@ export default function ResponsiveNavbar() {
         {/* Mobile Full-Screen Menu Overlay */}
       <div
         ref={menuOverlayRef}
-        className="lg:hidden inset-0 z-40 hidden opacity-0"
+        className="lg:hidden fixed inset-0 z-40 hidden opacity-0"
       >
         {/* Animated Background */}
         <div
