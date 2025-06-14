@@ -170,7 +170,7 @@ export default function ResponsiveNavbar() {
       {/* Fixed Mobile Toggle Button - Only visible on mobile */}
       <button
         onClick={handleMenuToggle}
-        className="lg:hidden top-6 right-6 z-50 p-3 bg-white/90 backdrop-blur-sm rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 border border-gray-200"
+        className="lg:hidden fixed top-6 right-6 z-50 p-3 bg-white/90 backdrop-blur-sm rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 border border-gray-200"
         aria-label="Toggle menu"
       >
         <div className="relative w-6 h-6">

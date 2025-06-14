@@ -45,10 +45,10 @@ const CoachesSection = () => {
   return (
     <section
       ref={sectionRef}
-      className="container mx-auto px-4 py-24 bg-white text-black"
+      className="container mx-auto px-4 py-16 md:py-24 bg-white text-black"
     >
       {/* Header */}
-      <div className="flex justify-between items-center text-3xl mb-16">
+      <div className="flex flex-col items-start gap-4 md:flex-row md:justify-between md:items-center text-4xl mb-16">
         <h1>
           MEET THE COACHES <br /> BEHIND ELYSIAN
         </h1>
@@ -58,7 +58,7 @@ const CoachesSection = () => {
       </div>
 
       {/* Images */}
-      <div className="flex justify-between gap-8">
+      <div className="flex flex-col md:flex-row md:justify-between gap-4 md:gap-8">
         <div>
           <img
             ref={image1Ref}
@@ -67,10 +67,10 @@ const CoachesSection = () => {
             className="rounded-[3rem] object-cover w-120 h-120 transition-all mb-6 custom-shadow"
           />
           <p className="mb-4"> Los Angeles, CA</p>
-          <h1 className="mb-4 text-8xl sm:text-5xl font-semibold leading-none">
+          <h1 className="mb-4 text-4xl font-semibold leading-none">
             Sarah Thompson
           </h1>
-          <p className="mb-4 w-120">
+          <p className="mb-4 md:w-120">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit
             ullam inventore laboriosam, et nisi, aperiam fugit voluptatum vitae
             repudiandae consequuntur aut? Omnis laborum molestiae quidem. Omnis
@@ -88,10 +88,10 @@ const CoachesSection = () => {
             className="rounded-[3rem] object-cover w-120 h-120 transition-all mb-6 custom-shadow"
           />
           <p className="mb-4"> Los Angeles, CA</p>
-          <h1 className="mb-4 text-8xl sm:text-5xl font-semibold leading-none">
+          <h1 className="mb-4 text-4xl font-semibold leading-none">
             Sarah Thompson
           </h1>
-          <p className="mb-4 w-120">
+          <p className="mb-4 md:w-120">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit
             ullam inventore laboriosam, et nisi, aperiam fugit voluptatum vitae
             repudiandae consequuntur aut? Omnis laborum molestiae quidem. Omnis
@@ -104,7 +104,7 @@ const CoachesSection = () => {
       </div>
 
       {/* Images */}
-      <div className="flex justify-between gap-8 mt-16">
+      <div className="flex flex-col md:flex-row md:justify-between gap-4 md:gap-8 mt-16">
         <div>
           <img
             ref={image3Ref}
@@ -113,10 +113,10 @@ const CoachesSection = () => {
             className="rounded-[3rem] object-cover w-120 h-120 transition-all mb-6 custom-shadow"
           />
           <p className="mb-4"> Los Angeles, CA</p>
-          <h1 className="mb-4 text-8xl sm:text-5xl font-semibold leading-none">
+          <h1 className="mb-4 text-4xl font-semibold leading-none">
             Sarah Thompson
           </h1>
-          <p className="mb-4 w-120">
+          <p className="mb-4 md:w-120">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit
             ullam inventore laboriosam, et nisi, aperiam fugit voluptatum vitae
             repudiandae consequuntur aut? Omnis laborum molestiae quidem. Omnis
@@ -134,10 +134,10 @@ const CoachesSection = () => {
             className="rounded-[3rem] object-cover w-120 h-120 transition-all mb-6 custom-shadow"
           />
           <p className="mb-4"> Los Angeles, CA</p>
-          <h1 className="mb-4 text-8xl sm:text-5xl font-semibold leading-none">
+          <h1 className="mb-4 text-4xl font-semibold leading-none">
             Sarah Thompson
           </h1>
-          <p className="mb-4 w-120">
+          <p className="mb-4 md:w-120">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit
             ullam inventore laboriosam, et nisi, aperiam fugit voluptatum vitae
             repudiandae consequuntur aut? Omnis laborum molestiae quidem. Omnis

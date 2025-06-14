@@ -77,23 +77,25 @@ const HeroSection = () => {
           </h1>
         </div>
       </div>
-      <section className="h-80 bg-black text-white flex justify-around items-center text-3xl">
-        <h1>
+      <section className="md:h-80 py-[4rem] px-[2rem] bg-black text-white">
+        <div className="container flex flex-col md:flex-row gap-2 md:justify-around items-center text-3xl">
+          <h1 className="text-4xl md:w-160">
           LET'S EXPERIENCE TENNIS
-          <br /> TOGETHER
+           TOGETHER
         </h1>
-        <div className="flex flex-col gap-2">
-          <p className="text-lg text-gray-500">Stay up to date</p>
-          <div>
+        <div className="flex flex-col gap-2 py-2">
+          <p className="text-lg text-gray-500 ml-4px">Stay up to date</p>
+          <div className="flex flex-col md:flex-row gap-2 md:gap-1">
             <input
               type="text"
               placeholder="Enter your email"
               className="px-4 py-2 border border-amber-400 rounded-3xl"
             />
-            <button className="bg-amber-400 text-white px-4 py-2 rounded-3xl ml-2">
+            <button className="bg-amber-400 text-white px-3 py-2 rounded-3xl">
               Subscribe
             </button>
           </div>
+        </div>
         </div>
       </section>
       {/* <CoachesSection /> */}
